@@ -1,0 +1,148 @@
+.btn {	
+	margin-block-end: 25px ;
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+	
+	//white-space: nowrap;
+	overflow: hidden;
+
+	position: relative;
+	transition: background 400ms;
+	
+	box-sizing: border-box;
+	
+	padding-block: 0.4rem;
+	padding-inline: 0.9rem;
+	
+	min-width: 64px;
+	
+	border: 1px solid;
+	border-radius: 0.25rem;
+	border-color: transparent;
+	
+	background-color: transparent;
+	color: var(--primary);
+	
+	font-weight: 650;
+	font-size: 0.9375rem;
+	line-height: 1.75;
+	line-height: 1.75;
+	letter-spacing: 0;
+	
+	text-transform: uppercase;
+	user-select: none;
+	text-rendering: auto;
+	
+	transition: font-size 0.2s;
+	a{
+		text-decoration: none;
+		color: var(--primary);
+	}
+
+	&.hover:hover {
+		font-size: 1em;
+		//transform: scale(1.1);
+		cursor: pointer;
+	}
+	
+	span.ripple {	
+		position: absolute;
+		border-radius: 50%;
+		transform: scale(0);
+		animation: ripple 600ms linear;
+		background-color: var(--primary-dp01);
+		opacity: 0.5;
+	}
+
+	&.larg {
+		font-size: 1rem;
+		font-weight: 700;
+		letter-spacing: 0;
+		
+		padding-inline: 1rem !important;
+		padding-block: 0.875rem !important;
+	}
+
+	&.small {
+		padding-inline: 6px !important;
+		padding-block: 4px !important;
+		margin-inline-end: -8px;
+		
+		font-size: 0.8125rem;
+		letter-spacing: 0;
+	}
+	
+	.startIcon {
+		color: #b2bac2;
+		fill:var(--on-primary);
+		padding-inline-end: 0.3rem;
+		width: 1.5em;
+		min-width: 24px;
+	}
+	
+	&.contained {
+		color: var(--on-primary);
+		background-color: var(--primary);
+		
+		outline: 0;
+		border: 0;
+		
+		box-shadow: 11px 10px 13px -9px hsla(0, 0%, 4%, 1);
+
+		// box-shadow: 0 1 0.5rem rgba(256, 256, 256, 0.3);
+		cursor: pointer;
+		&:hover {
+			background-color: var(--primary--dp005);
+		}
+		
+		span.ripple {
+			
+			position: absolute; /* The absolute position we mentioned earlier */
+			border-radius: 50%;
+			transform: scale(0);
+			animation: ripple 600ms linear;
+			background-color: var(--primary-dp01);
+			opacity: 0.5;
+		}
+	}
+	&.disabled{
+		color:hsl(0, 0%, 40%);
+		border:1px solid hsl(0, 0%, 40%);
+	}
+	&.outlined{
+
+		filter: drop-shadow(11px 10px 13px rgb(0 0 0 / 0.9));
+		
+		border-color: var(--primary);
+		color:var(--primary);
+		cursor: pointer;
+		&:hover {
+			background-color: hsla(267, 95%, 69% ,0.07);
+		}
+
+		span.ripple {
+			position: absolute;
+			border-radius: 50%;
+			transform: scale(0);
+			animation: ripple 600ms linear;
+			background-color: var(--primary-dp01);
+			opacity: 0.2;
+		}
+		@keyframes ripple {
+			to {
+				transform: scale(4);
+				opacity: 0;
+			}
+		}
+	}
+}
+
+
+@keyframes ripple {
+	to {
+		transform: scale(4);
+		opacity: 0;
+	}
+}

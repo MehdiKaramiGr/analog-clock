@@ -1,0 +1,169 @@
+.analog-clock {
+	--clock-face: #fff;
+	--clock-border: #1c202f;
+	--seconds-dial: #81eed6;
+	--minutes-dial: #1c202f;
+	--hours-dial: #1c202f;
+	--clock-numbers: #222134;
+
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-color: var(--clock-face);
+	border: solid 1px var(--clock-border);
+	border-radius: 150px;
+}
+
+.analog-clock.small {
+	width: 150px;
+	height: 150px;
+}
+
+.analog-clock::after {
+	background: var(--clock-border);
+	content: "";
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid var(--clock-face);
+}
+
+.dial {
+	overflow: hidden;
+	/* box-sizing: border-box; */
+	bottom: 50%;
+	position: absolute;
+	transform-origin: bottom;
+	-webkit-box-shadow: 0px 0px 2px 0px var(--seconds-dial);
+	-moz-box-shadow: 0px 0px 2px 0px var(--seconds-dial);
+	box-shadow: 0px 0px 2px 0px var(--seconds-dial);
+}
+
+.dial.seconds {
+	z-index: 4;
+
+	right: calc(50% - 0.15rem);
+	width: 0.23rem;
+	background-color: var(--seconds-dial);
+	border-radius: 15px;
+	height: 36.5%;
+}
+.dial.minutes {
+	z-index: 0;
+	right: calc(50% - 0.17rem);
+	width: 0.3rem;
+	background-color: var(--minutes-dial);
+
+	border-radius: 15px;
+
+	height: 33%;
+}
+.dial.hours {
+	z-index: 3;
+
+	right: calc(50% - 0.18rem);
+	width: 0.32rem;
+	background-color: var(--hours-dial);
+	border-radius: 15px;
+
+	height: 28%;
+}
+
+.analog-clock span {
+	position: absolute;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: var(--clock-numbers);
+	text-shadow: 0.8px 0.8px rgba(0, 0, 0, 0.5);
+}
+
+.twelve {
+	top: 10px;
+	left: 46%;
+}
+.twelve.dashed {
+	top: -3px;
+	left: 50%;
+	font-size: 30px;
+}
+
+.one {
+	top: 10%;
+	right: 26%;
+}
+
+.eleven {
+	top: 10%;
+	left: 26%;
+}
+
+.two {
+	top: 25%;
+	right: 10%;
+}
+
+.three {
+	right: 10px;
+	top: 46%;
+}
+
+.three.dashed {
+	right: 1qpx;
+	top: 44%;
+	transform: rotate(90deg);
+	font-size: 30px;
+}
+
+.four {
+	right: 30px;
+	top: 67%;
+}
+
+.five {
+	right: 78px;
+	top: 80%;
+}
+
+.six {
+	bottom: 10px;
+	left: calc(50% - 5px);
+}
+
+.six.dashed {
+	bottom: 2px;
+	left: 50%;
+	font-size: 30px;
+}
+
+.seven {
+	left: 80px;
+	top: 82%;
+}
+
+.eight {
+	left: 30px;
+	top: 67%;
+}
+
+.nine {
+	left: 10px;
+	top: 46%;
+}
+
+.nine.dashed {
+	left: 15px;
+	top: 44%;
+	transform: rotate(90deg);
+	font-size: 30px;
+}
+
+.ten {
+	top: 25%;
+	left: 10%;
+}

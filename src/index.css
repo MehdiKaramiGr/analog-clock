@@ -1,13 +1,40 @@
+:root {
+
+	--primary--dp02: hsl(267, 95%, 56%);
+	--primary--dp01: hsl(267, 95%, 66%);
+	--primary--dp005: hsl(267, 95%, 69%);
+	--primary: hsl(267, 95%, 76%);
+	--primary-dp01: hsl(267, 95%, 86%);
+
+	--primary-variant: #3700b3;
+	--secondary: #03dac6;
+	--background: #121212;
+
+	--surface: hsl(0, 0%, 7%);
+	--surface-dp01: hsl(0, 0%, 9%);
+	--surface-dp02: hsl(0, 0%, 11%);
+
+	--error: hsl(349, 82%, 61%);
+	--on-primary: #000000;
+	--on-secondary: #000000;
+	--on-background: #ffffff;
+	--on-surface: #ffffff;
+	--on-error: #000000;
+
+	--primary-rgb: 188, 136, 252;
+	--secondary-rgb: 3, 218, 198;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
