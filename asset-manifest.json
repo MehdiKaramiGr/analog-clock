@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/analog-clock/static/css/main.390a4254.css",
+    "main.js": "/analog-clock/static/js/main.64a6309e.js",
+    "static/js/787.2df2f174.chunk.js": "/analog-clock/static/js/787.2df2f174.chunk.js",
+    "index.html": "/analog-clock/index.html",
+    "main.390a4254.css.map": "/analog-clock/static/css/main.390a4254.css.map",
+    "main.64a6309e.js.map": "/analog-clock/static/js/main.64a6309e.js.map",
+    "787.2df2f174.chunk.js.map": "/analog-clock/static/js/787.2df2f174.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.390a4254.css",
+    "static/js/main.64a6309e.js"
+  ]
+}
